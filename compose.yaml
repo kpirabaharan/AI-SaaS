@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: web
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+    user: node
+    develop:
+      watch:
+        - path: ./package.json
+          action: rebuild
+        - path: ./package-lock.json
+          action: rebuild
+        - path: ./next.config.js
+          action: rebuild
+        - path: .
+          target: /usr/src/app
+          action: sync
+
+  db:
+    container_name: db
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: ai-saas
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+
+  adminer:
+    depends_on:
+      - db
+    container_name: adminer
+    image: adminer
+    ports:
+      - 8080:8080
