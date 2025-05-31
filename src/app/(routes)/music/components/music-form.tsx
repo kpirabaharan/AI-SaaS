@@ -68,8 +68,7 @@ const MusicForm = ({ setMusic }: MusicFormProps) => {
     <Form {...musicForm}>
       <form
         onSubmit={musicForm.handleSubmit(onSubmit)}
-        className='grid w-full grid-cols-6 gap-2 rounded-lg
-          border px-3 py-2 focus-within:shadow-sm md:px-4'
+        className='grid w-full grid-cols-6 gap-2 rounded-lg border px-3 py-2 focus-within:shadow-sm md:px-4'
       >
         <FormField
           control={musicForm.control}
@@ -80,8 +79,7 @@ const MusicForm = ({ setMusic }: MusicFormProps) => {
                 <Input
                   disabled={isLoading}
                   placeholder='Generate 90s gangsta rap.'
-                  className='border-0 px-2 outline-none 
-                    focus-visible:ring-0 focus-visible:ring-transparent'
+                  className='border-0 px-2 outline-none focus-visible:ring-0 focus-visible:ring-transparent'
                   {...field}
                 />
               </FormControl>

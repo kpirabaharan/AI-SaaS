@@ -71,8 +71,7 @@ const VideoForm = ({ setVideo }: VideoFormProps) => {
     <Form {...videoForm}>
       <form
         onSubmit={videoForm.handleSubmit(onSubmit)}
-        className='grid w-full grid-cols-6 gap-2 rounded-lg
-          border px-3 py-2 focus-within:shadow-sm md:px-4'
+        className='grid w-full grid-cols-6 gap-2 rounded-lg border px-3 py-2 focus-within:shadow-sm md:px-4'
       >
         <FormField
           control={videoForm.control}
@@ -84,14 +83,12 @@ const VideoForm = ({ setVideo }: VideoFormProps) => {
                   <Input
                     disabled={isLoading}
                     placeholder='Dog chasing its tail.'
-                    className='border-0 px-2 outline-none 
-                      focus-visible:ring-0 focus-visible:ring-transparent'
+                    className='border-0 px-2 outline-none focus-visible:ring-0 focus-visible:ring-transparent'
                     {...field}
                   />
                   <TooltipWrapper tooltip={'Generate'}>
                     <Button
-                      className='absolute right-1 top-1 flex md:right-0 md:top-0 
-                        md:hidden'
+                      className='absolute right-1 top-1 flex md:right-0 md:top-0 md:hidden'
                       variant={'outline'}
                       size={'icon'}
                       disabled={isLoading}

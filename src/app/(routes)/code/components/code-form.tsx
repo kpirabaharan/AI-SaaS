@@ -77,8 +77,7 @@ const CodeForm = () => {
     <Form {...codeForm}>
       <form
         onSubmit={codeForm.handleSubmit(onSubmit)}
-        className='grid w-full grid-cols-6 gap-2 space-y-2 rounded-lg
-          border px-3 py-2 focus-within:shadow-sm md:space-y-0 md:px-4'
+        className='grid w-full grid-cols-6 gap-2 space-y-2 rounded-lg border px-3 py-2 focus-within:shadow-sm md:space-y-0 md:px-4'
       >
         <FormField
           control={codeForm.control}
@@ -90,14 +89,12 @@ const CodeForm = () => {
                   <Input
                     disabled={isLoading}
                     placeholder='Create a React client component template.'
-                    className='border-0 px-2 pr-16 outline-none focus-visible:ring-0 
-                    focus-visible:ring-transparent sm:pr-0'
+                    className='border-0 px-2 pr-16 outline-none focus-visible:ring-0 focus-visible:ring-transparent sm:pr-0'
                     {...field}
                   />
                   <TooltipWrapper tooltip={'Generate'}>
                     <Button
-                      className='absolute right-1 top-1 flex md:right-0 md:top-0 
-                      md:hidden'
+                      className='absolute right-1 top-1 flex md:right-0 md:top-0 md:hidden'
                       variant={'outline'}
                       size={'icon'}
                       disabled={isLoading}

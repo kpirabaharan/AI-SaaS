@@ -4,8 +4,8 @@ import { NextResponse } from 'next/server';
 
 import { db } from '@/db';
 import { imagePrompt, users } from '@/db/schema';
-import { openai } from '@/lib/open-ai';
 import { deleteImageFromAzureBlob } from '@/lib/azure';
+import { openai } from '@/lib/open-ai';
 
 interface RequestProps {
   params: { imagePromptId: number };

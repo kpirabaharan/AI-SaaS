@@ -31,10 +31,7 @@ const ImagePromptSection = ({ imagePrompt }: ImagePromptSectionProps) => {
 
   return (
     <div className='flex flex-col gap-y-4'>
-      <div
-        className='flex w-full items-start gap-x-4 rounded-lg border 
-        border-black/10 bg-white p-4'
-      >
+      <div className='flex w-full items-start gap-x-4 rounded-lg border border-black/10 bg-white p-4'>
         <CustomAvatar role={'user'} />
         <p className='text-sm'>
           {imagePrompt.prompt}

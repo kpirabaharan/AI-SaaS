@@ -60,8 +60,7 @@ const SettingsForm = ({ user }: SettingsFormProps) => {
     <Form {...settingsForm}>
       <form
         onSubmit={settingsForm.handleSubmit(onSubmit)}
-        className='grid w-full grid-cols-6 gap-2 space-y-2 rounded-lg
-          border p-4 px-3 focus-within:shadow-sm md:px-6 lg:space-y-0'
+        className='grid w-full grid-cols-6 gap-2 space-y-2 rounded-lg border p-4 px-3 focus-within:shadow-sm md:px-6 lg:space-y-0'
       >
         <FormField
           control={settingsForm.control}
@@ -72,8 +71,7 @@ const SettingsForm = ({ user }: SettingsFormProps) => {
               <FormControl className='m-0 p-0'>
                 <Input
                   disabled={isLoading}
-                  className='border-0 px-2 outline-none 
-                    focus-visible:ring-0 focus-visible:ring-transparent'
+                  className='border-0 px-2 outline-none focus-visible:ring-0 focus-visible:ring-transparent'
                   {...field}
                 />
               </FormControl>
@@ -89,8 +87,7 @@ const SettingsForm = ({ user }: SettingsFormProps) => {
               <FormControl className='m-0 p-0'>
                 <Textarea
                   disabled={isLoading}
-                  className='border-0 px-2 outline-none focus-visible:ring-0 
-                    focus-visible:ring-transparent'
+                  className='border-0 px-2 outline-none focus-visible:ring-0 focus-visible:ring-transparent'
                   {...field}
                 />
               </FormControl>

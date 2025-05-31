@@ -75,8 +75,7 @@ const ImageForm = () => {
     <Form {...imageForm}>
       <form
         onSubmit={imageForm.handleSubmit(onSubmit)}
-        className='grid w-full grid-cols-6 gap-2 rounded-lg border p-2 px-3 
-          focus-within:shadow-sm md:px-4'
+        className='grid w-full grid-cols-6 gap-2 rounded-lg border p-2 px-3 focus-within:shadow-sm md:px-4'
       >
         <FormField
           control={imageForm.control}
@@ -87,8 +86,7 @@ const ImageForm = () => {
                 <Input
                   disabled={isLoading}
                   placeholder='Generate an image featuring a futuristic cityscape at night.'
-                  className='border-0 px-2 outline-none focus-visible:ring-0 
-                    focus-visible:ring-transparent'
+                  className='border-0 px-2 outline-none focus-visible:ring-0 focus-visible:ring-transparent'
                   {...field}
                 />
               </FormControl>

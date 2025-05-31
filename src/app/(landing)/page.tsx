@@ -9,7 +9,7 @@ import LandingFooter from '@/app/(landing)/components/landing-footer';
 const LandingPage = () => {
   return (
     <div className='flex h-full w-full flex-row overflow-hidden'>
-      <div className='relative hidden bg-primary px-8  md:block md:w-1/2 lg:w-3/5'>
+      <div className='relative hidden bg-primary px-8 md:block md:w-1/2 lg:w-3/5'>
         <Heading />
         <div className='flex h-full w-full items-center justify-between'>
           <ExamplePrompts />

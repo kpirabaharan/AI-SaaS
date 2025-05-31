@@ -77,8 +77,7 @@ const CodeGenerationContent = () => {
           {filteredMessages.map((message, index) => (
             <div
               key={index}
-              className='flex w-full items-start gap-x-4 rounded-lg border 
-              border-black/10 bg-white p-4'
+              className='flex w-full items-start gap-x-4 rounded-lg border border-black/10 bg-white p-4'
             >
               {message.role === 'user' ? (
                 <CustomAvatar role={'user'} />
@@ -94,10 +93,7 @@ const CodeGenerationContent = () => {
                     <li className='mb-1' {...props} />
                   ),
                   pre: ({ node, ...props }) => (
-                    <div
-                      className='my-2 w-full overflow-auto rounded-lg 
-                    bg-black/10 p-2'
-                    >
+                    <div className='my-2 w-full overflow-auto rounded-lg bg-black/10 p-2'>
                       <pre {...props} />
                     </div>
                   ),

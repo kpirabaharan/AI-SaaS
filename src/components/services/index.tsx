@@ -32,13 +32,10 @@ const Services = () => {
             animate={'visible'}
           >
             <Link href={href}>
-              <Card
-                className='flex cursor-pointer flex-row items-center gap-x-4 bg-card
-                p-4 transition duration-1000 hover:bg-muted hover:shadow-md'
-              >
+              <Card className='flex cursor-pointer flex-row items-center gap-x-4 bg-card p-4 transition duration-1000 hover:bg-muted hover:shadow-md'>
                 <div
                   className={cn(
-                    'flex h-10 w-10 items-center justify-center rounded-md                     bg-teal-500/20',
+                    'flex h-10 w-10 items-center justify-center rounded-md bg-teal-500/20',
                     bgColor,
                   )}
                 >
